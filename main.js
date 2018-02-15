@@ -4,7 +4,7 @@ $(document).ready( function() {
 var cChoiceArray = ['rock', 'paper', 'scissor']
 var cChoice = null
 var uChoice = null
-//var result = null
+
 
 $('.choice').on('click', startGame)
 
@@ -18,10 +18,12 @@ function startGame(){
   console.log(uChoice)
   console.log(cChoice)
   console.log(compare(uChoice, cChoice))
-  $('#results').text("result here")
+  compare()
+  //$('#results').text(result)
 }
 
 function compare(uChoice, cChoice){
+
   if (uChoice == cChoice){
     return "Looks like a tie"
     result = "Tie"
@@ -43,10 +45,9 @@ function compare(uChoice, cChoice){
   }else if (uChoice == "scissor" && cChoice == "rock"){
     return "oooooof.  You lose."
     result = "You Lose"
+  }
 }
 
-
-}
 
 
 
