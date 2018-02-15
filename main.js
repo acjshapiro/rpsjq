@@ -18,8 +18,7 @@ function startGame(){
   console.log(uChoice)
   console.log(cChoice)
   console.log(compare(uChoice, cChoice))
-  $('#results').text(result)
-  debugger
+  $('#results').text("result here")
 }
 
 function compare(uChoice, cChoice){
@@ -44,8 +43,7 @@ function compare(uChoice, cChoice){
   }else if (uChoice == "scissor" && cChoice == "rock"){
     return "oooooof.  You lose."
     result = "You Lose"
-
-  }
+}
 
 
 }
