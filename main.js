@@ -1,4 +1,4 @@
-
+var result
 $(document).ready( function() {
 
 var cChoiceArray = ['rock', 'paper', 'scissor']
@@ -17,33 +17,33 @@ function startGame(){
   uChoice = this.id
   console.log(uChoice)
   console.log(cChoice)
-  console.log(compare(uChoice, cChoice))
-  compare()
-  //$('#results').text(result)
+  compare(uChoice, cChoice)
+  $('#choice').text('You Chose: ' + uChoice)
+  $('#results').text(result)
+
 }
 
 function compare(uChoice, cChoice){
 
   if (uChoice == cChoice){
-    return "Looks like a tie"
     result = "Tie"
   }else if(uChoice == "rock" && cChoice == "paper"){
-      return "oooooof.  You lose."
+      //return "oooooof.  You lose."
       result = "You Lose"
   }else if (uChoice == "rock" && cChoice == "scissor"){
-      return "Eyyyyy! You win!"
+      //return "Eyyyyy! You win!"
       result = "You Win"
   }else if (uChoice == "paper" && cChoice == "rock" ){
-      return "Eyyyyy! You Win!"
+      //return "Eyyyyy! You Win!"
       result = "You Win"
   }else if (uChoice == "paper" && cChoice == "scissor" ){
-      return "oooooof.  You lose."
+      //return "oooooof.  You lose."
       result = "You Lose"
   }else if (uChoice == "scissor" && cChoice == "paper" ){
-      return "Eyyyyy! You Win!"
+      //return "Eyyyyy! You Win!"
       result = "You Win"
   }else if (uChoice == "scissor" && cChoice == "rock"){
-    return "oooooof.  You lose."
+    //return "oooooof.  You lose."
     result = "You Lose"
   }
 }
