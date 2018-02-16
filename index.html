@@ -1,7 +1,12 @@
 <html>
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- ALL STYLING LINKS:  My css file, google font link,  CDN's for boostrap and materialize -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="./main.css">
     <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
     <title>RPS-Jquery</title>
@@ -9,10 +14,15 @@
 
   <body>
     <h1>Welcome to Rock, Paper, Scissor!</h1>
-    <h2>Click on an image/button to make your choice</h2>
+    <h2>Click on an image to make your choice</h2>
+
+    <!-- DIV organization to make bootstrap layout work.  Structure copy/paste
+    from boostrap.com.  Just insterted Images in the right places -->
     <div class="container">
       <div class="row">
         <div class="col-sm">
+          <!-- ID: rock for reference in JavaScript file.  Class 'choice' for use in
+          JS file.  Class 'circle' for bootsrap -->
           <img id="rock" class="choice circle" src="./images/rock.jpg">
         </div>
       <div class="col-sm">
@@ -28,17 +38,19 @@
     <img id="scissor" class="choice" src="./images/scissor.jpg"> -->
 
     <div>
-      <h2 id="choice"></h2>
+      <!-- Blank h2 with id 'choice' where I will insert the user choice with Jquery -->
+      <h2 id="uchoice"></h2>
+      <!-- Blank h2 with id 'cchoice' where I will insert the computer choice with Jquery -->
       <h2 id="cchoice"></h2>
-      <h2 id="results"> .......</h2>
+      <!--h2 with id 'result' whose text I will replace with Jquery -->
+      <h2 id="results"> Let's Do The Damn Thing</h2>
     </div>
-
+    <!-- my JavaScriptlinks.  CDN for jquery and my local JS file -->
     <script
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="./main2.js"></script>
   </body>
   </html>
