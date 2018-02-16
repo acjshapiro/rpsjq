@@ -1,5 +1,7 @@
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link type="text/css" rel="stylesheet" href="./main.css">
     <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee" rel="stylesheet">
     <title>RPS-Jquery</title>
@@ -8,10 +10,22 @@
   <body>
     <h1>Welcome to Rock, Paper, Scissor!</h1>
     <h2>Click on an image/button to make your choice</h2>
-
-    <img id="rock" class="choice" src="./images/rock.jpg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <img id="rock" class="choice circle" src="./images/rock.jpg">
+        </div>
+      <div class="col-sm">
+        <img id="paper" class="choice circle" src="./images/paper.jpg">
+      </div>
+      <div class="col-sm">
+        <img id="scissor" class="choice circle" src="./images/scissor.jpg">
+    </div>
+  </div>
+</div>
+    <!-- <img id="rock" class="choice" src="./images/rock.jpg">
     <img id="paper" class="choice" src="./images/paper.jpg">
-    <img id="scissor" class="choice" src="./images/scissor.jpg">
+    <img id="scissor" class="choice" src="./images/scissor.jpg"> -->
 
     <div>
       <h2 id="choice"></h2>
