@@ -24,7 +24,7 @@ function startGame(){
   console.log(uChoice) //can see in the console if the choices were done correctly
   console.log(cChoice)
   compare()  //Run the compare function below to see who won
-  $('#uchoice').text('You Chose: ' + uChoice) //Inject user choice into HTML with the ID: choice (blank h2)
+  $('#uchoice').text('You Chose: ' + uChoice) //Inject user choice into HTML with the ID: uchoice (blank h2)
   $('#cchoice').text('I Chose: ' + cChoice) //Inject computer choice into HTML with the ID: cChoice
   $('#results').text(result) //Replace the text of the HTML with the ID: results with my results variable
                               //which will be defined below in the compare function
