@@ -19,6 +19,7 @@ function startGame(){
   console.log(cChoice)
   compare(uChoice, cChoice)
   $('#choice').text('You Chose: ' + uChoice)
+  $('#cchoice').text('I Chose: ' + cChoice)
   $('#results').text(result)
 
 }
