@@ -24,8 +24,8 @@ function startGame(){
   console.log(uChoice) //can see in the console if the choices were done correctly
   console.log(cChoice)
   compare()  //Run the compare function below to see who won
-  $('#uchoice').text('You Chose: ' + uChoice) //Inject user choice into HTML with the ID: uchoice (blank h2)
-  $('#cchoice').text('I Chose: ' + cChoice) //Inject computer choice into HTML with the ID: cChoice
+  $('#uchoice').text('You Chose:  ' + uChoice) //Inject user choice into HTML with the ID: uchoice (blank h2)
+  $('#cchoice').text('I Chose:  ' + cChoice) //Inject computer choice into HTML with the ID: cChoice
   $('#results').text(result) //Replace the text of the HTML with the ID: results with my results variable
                               //which will be defined below in the compare function
 }
@@ -33,19 +33,19 @@ function startGame(){
   function compare(){
 
     if (uChoice == cChoice){
-      result = "Tie"  //assign this string to result variable so I can plug into HTML
+      result = "Tied up.  Come at me."  //assign this string to result variable so I can plug into HTML
     }else if(uChoice == "rock" && cChoice == "paper"){
-        result = "You Lose"
+        result = "You Lose... Shit is weak"
     }else if (uChoice == "rock" && cChoice == "scissor"){
-        result = "You Win"
+        result = "Eyyyyyyy! You Win"
     }else if (uChoice == "paper" && cChoice == "rock" ){
-        result = "You Win"
+        result = "Noooooiiiiice.  Thats a win"
     }else if (uChoice == "paper" && cChoice == "scissor" ){
-        result = "You Lose"
+        result = "Uhhnnnnnn Gotcha! YOU LOSE!"
     }else if (uChoice == "scissor" && cChoice == "paper" ){
-        result = "You Win"
+        result = "Take your W, ya wanker."
     }else if (uChoice == "scissor" && cChoice == "rock"){
-      result = "You Lose"
+      result = "You Lose, Jabroni"
     }
   }
 })
